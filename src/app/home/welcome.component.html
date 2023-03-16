@@ -1,0 +1,198 @@
+﻿<section class="banner" >
+
+  
+    <div  >
+        <!--<div  >
+            <h5 style="color:#e58c6b;font-family:Roboto ;font-weight:bold; " class="center text-center">
+            WELCOME TO THE ULTIMATE NETWORK OF INFLUENTIAL AND EXCEPTIONAL PEOPLE </h5>
+        </div>-->
+        <div class="row no-margin ">
+            <div class="col-md-8 text-center hero-text wow fadeIn" data-wow-duration="0.5s">
+                &nbsp;
+                <!--<h4> LEADING BOUTIQUE PERSONAL MATCHMAKING FIRM</h4>-->
+            </div>
+            <div class="col-md-4 pull-right" style="margin:25px">
+                <div class="register-form">
+                    <h5 class="center text-center" style="font-size:18px; font-family: Papyrus; font-weight: 600;color:#b20f30;font-weight:bold;line-height: 130%;  ">
+                        Fill out the form & one of our matchmakers will contact you!
+                    </h5>
+                    <form name="enqueryform">
+
+
+                        <div>
+                            <div class="input-field col s12">
+                                <i class="material-icons prefix color-merrone">account_circle</i>
+                                <input [(ngModel)]="user.name" name="email"
+                                       type="text" class="validate">
+                                <label for="name">Name</label>
+                            </div>
+
+                            <div class="input-field col s12">
+                                <i class="material-icons prefix color-merrone">settings</i>
+                                <input [(ngModel)]="user.lookingfor" name="lookingfor"
+                                       type="text" class="validate">
+                                <label for="lookingfor">Looking For</label>
+                            </div>
+
+                            <div class="input-field col s12">
+                                <i class="material-icons prefix color-merrone">phone</i>
+                                <input [(ngModel)]="user.mobileno" name="mobileno"
+                                       type="text" class="validate">
+                                <label for="mobileno">Mobile No</label>
+                            </div>
+
+                            <div class="input-field col s12">
+                                <i class="material-icons prefix color-merrone">mail</i>
+                                <input [(ngModel)]="user.emailid" name="emailid"
+                                       type="email" class="validate">
+                                <label for="emailid">Email</label>
+                            </div>
+
+
+                            <div class="input-field col s12">
+                                <i class="material-icons prefix color-merrone">location_on</i>
+                                <input [(ngModel)]="user.city" name="city" min="2"
+                                       type="text" class="validate">
+                                <label for="city">City</label>
+                            </div>
+
+
+                            <span>{{errorMsg}}</span>
+
+                            <button (click)="SendMailToAdmin(user)"
+                                    class="waves-effect waves-light btn bg-merrone"
+                                    type="submit" name="action">
+                                Submit
+                            </button>
+                            <span style="color:gray" > Click here to <a  [routerLink]="['/register']"> Register</a> full details.</span>
+
+                        </div>
+                    </form>
+
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+<section class="container">
+
+    <!--<div class="row container-wrapper  center">
+
+        <p class="light grey-text text-darken-4" style="line-height: 150%;font-size: 20px;margin-bottom: 25px;line-height: 1.928571429;">
+            Welcome to the ultimate network of influential and exceptional people<br />
+
+            You're single, busy, professional, successful and have a lot to offer. You know what you're not finding the right one. <br />
+            <span style="">You've come to the right place.</span>
+        </p>
+
+    </div>
+    <div class="row container-wrapper  center">
+        <h5 class="grey-text  text-darken-4" style="font-size:20px;font-family: Papyrus; font-weight: 600; line-height: 130%; ">About Us</h5>
+        <p class="light grey-text text-darken-4" style="line-height: 150%;font-size: 20px; line-height: 1.928571429;margin-bottom: 25px;">
+
+            We're an Classy leading boutique personal matchmaking firm for Professionals, Executives, and busy singles seeking a long term relationship. <br />
+            Classy offers membership are customized to each individual.  We will understand who you are and your search parameters.   <br />
+            Next, we'll determine if we can accept your search because we feel we have viable matches.
+        </p>
+
+    </div>-->
+    <!--<div class="row  services center">
+        <h5 class="grey-text  text-darken-4" style="line-height: 130%; font-family: Papyrus;font-size:20px; font-weight: 600;">Our Matchmaking Process</h5>
+        <p class="light grey-text text-darken-4" style="line-height: 150%;font-size: 20px;margin-bottom:25px ;line-height: 1.928571429;">
+            Classy is an upscale matchmaking service where successful, marriage minded people meet exceptionally beautiful and intelligent <br />
+            matches in a confidential and relaxing manner. Entrepreneurs and business leaders who are driven to become a synonym for <br />
+            excellence are relentlessly focused, sacrificing their comfort daily and devoting themselves to their vision. As such, they do not  <br />
+            hesitate to outsource any and all tasks that someone else can do. They have chefs. Personal shoppers. Personal assistants to run <br />
+            errands. And it only makes sense, then for these busy trailblazers to outsource the goal of finding love and romance to classy <br />
+            matchmaking experts. After all, time is money.
+        </p>
+    </div>-->
+
+    <!--<div class="row container-wrapper center grey-text text-darken-4" style="margin-bottom: 30px;">
+        <h5 class="grey-text text-darken-4" style="line-height:130%;font-family: Papyrus; font-weight: 600;font-size:20px;">How Its Works</h5>
+
+        <div class="col-md-3">
+            <div class="icon-block">
+                <h2 class="center color-merrone"><i class="material-icons" style="font-size:52px">flash_on</i></h2>
+                <h5 class="center" style="font-style: normal;">REGISTRATION</h5>
+
+                <p class="light " style="font-size: 17px; font-style: normal;">
+                    Simply register on our
+                    website to begin the
+                    process. One of our
+                    classy matchmakers
+                    will process it within
+                    24 hours.
+                </p>
+            </div>
+        </div>
+
+        <div class="col-md-3 center">
+
+
+            <div class="icon-block">
+                <h2 class="center color-merrone"><i class="material-icons" style="font-size:52px">group</i></h2>
+                <h5 class="center text-darken-4" style="font-style: normal;">INTAKE</h5>
+
+                <p class="light" style="font-size: 17px; font-style: normal;">
+                    We will understand
+                    with your match
+                    maker to fully analyze
+                    your personality,
+                    target and past
+                    experiences.
+                </p>
+            </div>
+        </div>
+
+        <div class="col-md-3">
+            <div class="icon-block">
+                <h2 class="center color-merrone"><i class="material-icons" style="font-size:52px">settings</i></h2>
+                <h5 class="center" style="font-style: normal;">MATCHING</h5>
+
+                <p class="light" style="font-size: 17px; font-style: normal;">
+                    We scout our extensive
+                    datebase to  find your
+                    ideal matches. After
+                    week will be sent new
+                    potential mininum 24
+                    profiles to review.
+                </p>
+            </div>
+        </div>
+
+        <div class="col-md-3">
+            <div class="icon-block">
+                <h2 class="center color-merrone"><i class="material-icons" style="font-size:52px">group</i></h2>
+                <h5 class="center" style=" font-style normal;">MEETING</h5>
+
+                <p class="light" style="font-size: 17px; font-style: normal;">
+                    After each meeting
+                    will receive a
+                    debriefing with our
+                    team to review your
+                    meetings in details.
+                </p>
+            </div>
+        </div>
+    </div>-->
+
+    <div class="row center " style="margin-bottom: 40px;">
+
+        <button [routerLink]="['/register']"
+                class="waves-effect waves-light btn bg-merrone"
+                type="submit" name="action">
+            JOIN OUR EXCLUSIVE  DATABASE
+        </button>
+
+    </div>
+    <simple-notifications [options]="nfyoptions"></simple-notifications>
+</section>
+
